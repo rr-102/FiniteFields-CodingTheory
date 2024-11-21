@@ -12,3 +12,7 @@ Evaluating the polynomial and adding redundant points are relatively trivial. Th
 A mathematical notation for this is shown below.
 
 Once we have a so-called "basis polynomial" for each evaluation point, we scale each basis polynomial by its associated value at the evaluation point. We can finally sum each scaled basis polynomial to get the fit. This works because each scaled basis will be the associated value at that point and 0 everywhere else. Therefore, when they are all summed, each basis polynomial only contributes to the value at the evaluation point.
+
+## Reed-Solomon over Finite Fields
+
+Using Reed-Solomon codes over finite fields works the same as in the real numbers, and is often actually preferred due to various efficiencies. One added efficiency of finite fields is its simple computation of inverses. To normalize each basis polynomial to an output of 1, we often need to multiply by an inverse value. For example, if the output at the evaluation point was originally 3, we would multiply by 1/3 or 0.3333. For computers, decimal or floating point calculation is orders of magnitude harder than integer addition. Evaluationg over finite fields allows us to have exclusively integer inverses. In this case, if we were operating over F_7, the inverse of 3 would be 5. Furthermore, this gives additional precision, since many real inverses, like 1/3, do not truncate.
