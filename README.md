@@ -17,6 +17,7 @@ Geometry over Finite Fields
 Coding Theory
 - Repetition code (Ridge)
 - Code parameters
+- Equivalence of codes
 - Hamming distance (Dailin)
 - Singleton Bound (Dailin)
 - Linear codes (Arun)
@@ -26,3 +27,4 @@ Coding Theory
 - Hamming codes
 - Golay codes (Arun)
 - Binary Goppa codes (Rohan)
+- Nonlinear codes (Eva)
