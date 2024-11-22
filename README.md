@@ -18,6 +18,7 @@ Coding Theory
 - Repetition code (Ridge)
 - Code parameters
 - Hamming distance (Dailin)
+- Singleton Bound (Dailin)
 - Linear codes (Arun)
 - Contrast with cryptography (Rohan)
 - Code bounds (Dailin)
