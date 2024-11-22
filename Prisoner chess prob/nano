@@ -1,0 +1,73 @@
+# Prisoner's Chess Problem
+
+The **Prisoner's Chess Problem** is a thought-provoking puzzle that combines elements of logic, probability, and collaboration. It involves a group of prisoners who must work together to devise a strategy that could lead to their survival. Here's a detailed breakdown of the problem:
+
+---
+
+## Problem Description
+
+A warden presents the prisoners with a challenge:
+
+1. **Setup**:
+   - There are 2 prisoners** and a **chessboard** with an 8x8 grid.
+   - Each square of the chessboard can either have a **coin placed heads up or tails up**.
+
+2. **Rules**:
+   - The warden will arrange the coins randomly on the chessboard.
+   - Each prisoner is brought into the room, one by one, and allowed to **flip exactly one coin**.
+   - After flipping a coin, the prisoner must leave the room, and the next prisoner will enter.
+   - The prisoners cannot communicate with each other once the process begins.
+
+3. **Objective**:
+   - The prisoners must **devise a strategy beforehand** such that they can collectively ensure that at least one specific coin (e.g., a pre-designated "key coin") will be flipped to **heads**.
+
+4. **Constraints**:
+   - The warden observes everything and knows their strategy but does not interfere.
+   - The prisoners must base their strategy on the arrangement of the coins on the chessboard.
+
+---
+
+## Key Challenges
+
+1. **Communication Restriction**:
+   - Once the process starts, the prisoners cannot share any information about what they see or do.
+
+2. **Random Coin Arrangement**:
+   - The initial arrangement of the coins is entirely random, and the prisoners must account for all possible configurations.
+
+3. **Strategy Design**:
+   - The strategy must be robust enough to guarantee the goal regardless of the initial state of the board.
+
+---
+
+## Possible Approaches
+
+To solve the problem, the prisoners must leverage the **mathematics of parity (even/odd)** or similar systematic techniques. Here’s a hint:
+
+- The prisoners can agree to consider the **XOR (exclusive OR)** of the coin states for all squares.
+- By assigning a numeric identifier to each square and flipping based on a calculated value, they can synchronize their efforts.
+
+---
+
+## Applications
+
+The Prisoner's Chess Problem is not just a theoretical exercise—it has real-world implications in:
+
+- **Computer Science**:
+  - Error detection and correction in data transmission.
+  - Designing fault-tolerant systems.
+
+- **Mathematics**:
+  - Logical reasoning and parity concepts.
+  - Group theory and modular arithmetic.
+
+- **Team Collaboration**:
+  - Illustrates the importance of pre-defined strategies in scenarios with limited communication.
+
+---
+
+## Why is it Fascinating?
+
+This problem is fascinating because it showcases how **teamwork and logical thinking** can overcome even the most restrictive conditions. It challenges our ability to think systematically and optimize strategies.
+
+---
