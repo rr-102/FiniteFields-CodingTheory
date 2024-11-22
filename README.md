@@ -21,7 +21,6 @@ Coding Theory
 - Singleton Bound (Dailin)
 - Linear codes (Arun)
 - Contrast with cryptography (Rohan)
-- Code bounds (Dailin)
 - Reed Solomon codes (Ridge)
 - Convolutional encoders, Turbo codes (Malik)
 - Hamming codes
