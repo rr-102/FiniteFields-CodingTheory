@@ -11,7 +11,11 @@ Evaluating the polynomial and adding redundant points are relatively trivial. Th
 
 A mathematical notation for this is shown below.
 
+![Basis Polynomial](/pictures/lagrange1)
+
 Once we have a so-called "basis polynomial" for each evaluation point, we scale each basis polynomial by its associated value at the evaluation point. We can finally sum each scaled basis polynomial to get the fit. This works because each scaled basis will be the associated value at that point and 0 everywhere else. Therefore, when they are all summed, each basis polynomial only contributes to the value at the evaluation point.
+
+![Lagrange Interpolation](/pictures/lagrange2)
 
 # Reed-Solomon over Finite Fields
 ## Using Finite Fields for Reed Solomon Codes
