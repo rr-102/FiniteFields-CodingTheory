@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+\title{Understanding the Singleton Bound in Coding Theory}
+\author{}
+\date{}
+\maketitle
+
+\section*{Theorem 2.1: Singleton Bound}
+Let \( C \) be a linear code of length \( n \), dimension \( k \), and minimum distance \( d \) over \( \mathbb{F}_q \). Then:
+\[
+d \leq n - k + 1
+\]
+
+This theorem establishes an upper bound for the minimum distance of a linear code given its length and dimension.
+
+\subsection*{Key Insights}
+- The minimum distance \( d \) is the smallest number of positions in which any two codewords differ.
+- For Reed-Solomon codes \( RS(k, q) \), the minimum distance is exactly \( n - k + 1 \). Codes that meet the Singleton Bound are called \textit{Maximum Distance Separable (MDS)} codes.
+
+\section*{Proof of the Singleton Bound}
+We define a subset \( W \subseteq \mathbb{F}_q^n \) as:
+\[
+W := \{ \mathbf{a} = (a_1, \dots, a_n) \in \mathbb{F}_q^n \mid a_d = a_{d+1} = \dots = a_n = 0 \}.
+\]
+For any \( \mathbf{a} \in W \), the weight \( \text{wt}(\mathbf{a}) \leq d - 1 \). Therefore, \( W \cap C = \{0\} \).
+
+We know:
+\[
+\dim(W + C) = \dim W + \dim C,
+\]
+where \( W + C := \{\mathbf{w} + \mathbf{c} \mid \mathbf{w} \in W, \mathbf{c} \in C \} \).
+
+Since \( \dim W = d - 1 \) and \( \dim C = k \), this implies:
+\[
+d - 1 + k \leq n.
+\]
+Thus:
+\[
+d \leq n - k + 1.
+\]
+
+\section*{Implications of the Singleton Bound}
+1. The Singleton Bound is true for both linear and non-linear codes. 
+2. Codes that achieve the bound are called \textbf{MDS codes}.
+
+\subsection*{Practical Limitations}
+Reed-Solomon codes are a restrictive class of MDS codes due to their alphabet size requirements. They are not suitable for all cases, especially when \( q = 2 \).
+
+\subsection*{Generalization}
+For any code of length \( n \), with \( M \) codewords and minimum distance \( d \) over an alphabet of size \( q \), we have:
+\[
+M \leq q^{n - d + 1}.
+\]
+
+\section*{Conclusion}
+The Singleton Bound plays a foundational role in coding theory, guiding the design and analysis of error-correcting codes. While the bound is tight for MDS codes, finding codes that approach this bound with practical efficiency remains an open challenge.
+
+\end{document}
+
