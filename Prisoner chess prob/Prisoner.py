@@ -35,10 +35,9 @@ def compute_parity(board):
     return {"rows": row_parity, "columns": col_parity}
 
 # Game begins
-print("Welcome to the Prisoner's Chess Problem Game!")
-print("You are the second prisoner. The program will simulate the first prisoner and the warden's question.")
+print("Welcome to the Prisoner's Chess Problem Game! You are the second prisoner. The program will simulate the first prisoner and the warden's question.")
 
-# Initialize the board
+# Create the board
 initial_board = initialize_chessboard()
 
 # Compute and show the initial parity
@@ -62,14 +61,14 @@ print("\nFlipped Parity Information:")
 print("Row Parity (after flip):", flipped_parity["rows"])
 print("Column Parity (after flip):", flipped_parity["columns"])
 
-# Show the user the parity difference as clues
+# Clue
 row_diff = [i for i in range(8) if initial_parity["rows"][i] != flipped_parity["rows"][i]]
 col_diff = [i for i in range(8) if initial_parity["columns"][i] != flipped_parity["columns"][i]]
 print("\nClues:")
 print("The flipped square is in one of these rows:", row_diff)
 print("The flipped square is in one of these columns:", col_diff)
 
-# User guesses the warden's question
+# Guesses the warden's question
 try:
     user_guess = int(input("\nEnter your guess for the warden's question (a number between 0 and 63): "))
     if user_guess < 0 or user_guess > 63:
@@ -82,6 +81,3 @@ try:
             print(f"Incorrect. The correct answer was {warden_question}.")
 except ValueError:
     print("Invalid input! Please enter a number between 0 and 63.")
-
-print("\nThank you for playing!")
-
