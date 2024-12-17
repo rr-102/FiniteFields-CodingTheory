@@ -39,8 +39,10 @@ Furthermore, evaluating powers of a primitive element follows the same overall s
 </div>
 
 <div align="center">
-  <img src="pictures/lagrange2.png" alt="Lagrange interpolation" width="400">
+  <img src="pictures/Screenshot 2024-11-14 163950.png" alt="Lagrange interpolation" width="400">
 </div>
+
+Say we have f(x) = 5x^2 + 3x + 1 and want to evaluate at x = 4 in F7. This corresponds to x = 3^4 since 3 is the primitive element, and we can rewrite as 1*3^0 + 3*3^4 + 5*3^8. In this form, we can easily simplify to the altered Fourier representation. As a result of this, we can use the fast Fourier transform, a divide and conquer algorithm to solve the fourier transform representation, for significant runtime improvements.
 
 
 
