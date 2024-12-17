@@ -32,7 +32,15 @@ For any finite field with a prime number of elements has some element that will 
 
 First off, assume we has some polynomial fit x^4 + 2x^3 + x^2 + x + 1 in F_7. Raising different evaluation points to large powers like this is often very computationally intensive. By instead representing an element as a power of a primitive, i.e. 2 = 3^2, we can rewrite any exponenetiation in terms of the same base, i.e. 2^4 = (3^2)^4 = 3^8. This allows us to precompute and reuse the powers of the primitive element. Additionally, since the primitive element is cyclic in n - 1 = 6 elements, we can take the modulus of the resulting power and look up the output in our table of precomputed primitive powers.
 
-Furthermore, evaluating powers of a primitive element follows the same overall structure as the discrete Fourier transformation. Instead of e being raised to successive powers, the primitive element is. This can be represented by the following equation.
+Furthermore, evaluating powers of a primitive element follows the same overall structure as the discrete Fourier transformation. Instead of e being raised to successive powers, the primitive element is. The discrete Fourier transform (top) and adjusted transform (bottom) can be seen below.
+
+<div align="center">
+  <img src="pictures/lagrange2.png" alt="Lagrange interpolation" width="400">
+</div>
+
+<div align="center">
+  <img src="pictures/lagrange2.png" alt="Lagrange interpolation" width="400">
+</div>
 
 
 
