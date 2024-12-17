@@ -35,7 +35,7 @@ First off, assume we has some polynomial fit x^4 + 2x^3 + x^2 + x + 1 in F_7. Ra
 Furthermore, evaluating powers of a primitive element follows the same overall structure as the discrete Fourier transformation. Instead of e being raised to successive powers, the primitive element is. The discrete Fourier transform (top) and adjusted transform (bottom) can be seen below.
 
 <div align="center">
-  <img src="pictures/lagrange2.png" alt="Lagrange interpolation" width="400">
+  <img src="pictures/Screenshot 2024-11-14 155644.png" alt="Lagrange interpolation" width="400">
 </div>
 
 <div align="center">
