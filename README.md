@@ -1,30 +1,8 @@
 # FiniteFields-CodingTheory
 
-Finite Fields
-- Field axioms
-- Construction of finite fields of prime order (Ridge)
+This repository serves as a final project for the 2024 UVA Geometry Lab on coding theory and finite field geometry.
 
-Linear Algebra
-- Review
-- All vector spaces have a basis (Arun)
+A good place to start is by reading the document Introduction.pdf, which serves as an introduction to both of these topics. Afterwards, please explore the various encoders and decoders studied by the group!
 
-Geometry over Finite Fields
-- Examples of polynomials and their roots (Arun)
-- Elliptic curves
-- Linear subspaces
--   Quadratic residues
-
-Coding Theory
-- Repetition code (Ridge)
-- Code parameters
-- Equivalence of codes
-- Hamming distance (Dailin)
-- Singleton Bound (Dailin)
-- Linear codes (Arun)
-- Contrast with cryptography (Rohan)
-- Reed Solomon codes (Ridge)
-- Convolutional encoders, Turbo codes (Malik)
-- Hamming codes
-- Golay codes (Arun)
-- Binary Goppa codes (Rohan)
-- Nonlinear codes (Eva)
+Project participants: Nate Bryerton, Arun Jannupreddy, Malik Kurtz, Dailin Li, Rohan Radadiya, Ridge Redding, Eva Simpson
+Project mentors: [J.D. Quigley]([url](https://quigleyjd.github.io/)), [Michael Wills]([url](https://sites.google.com/view/michael-wills/))
